@@ -1,0 +1,16 @@
+<!-- On importe load static pour pouvoir l'utiliser -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Site Django</title>
+    <!-- On importe notre feuille de style css -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<h1>Mon premier site Django!</h1>
+<! -- On affiche la date à partir de ma vue -->
+<h2>On est le {{ date|date:"d F Y"}}</h2>
+</body>
+</html>
